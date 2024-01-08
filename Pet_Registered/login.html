@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir's Purrfect Pets Shop</title>
+    <style>
+       body {
+        font-family: Arial, sans-serif;
+        background-image: url(pet_picture.gif);
+        background-size: cover;
+        margin: 0; 
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 100vh; 
+        }
+       
+        form {
+            
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+        }
+        img.avatar {
+             width: 40%;
+             border-radius: 50%;
+        }
+        img.avatar {
+             width: 40%;
+             border-radius: 50%;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        i {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="loginVerify.php" name="login" method="POST">
+        <h2>Amir's Purrfect Pets Shop</h2>
+        <center>
+            <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+        </center>
+        <p><i>Enter your user ID & password<b style='color:red;'>*</b></i></p>
+
+        <p><b>User ID** </b><input type="text" name="userID" required></p>
+        <p><b>Password**</b> <input type="password" name="passWord" required></p>
+        
+        <input type="submit" value="Login">
+    </form>
+
+
+</body>
+</html>
